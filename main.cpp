@@ -94,7 +94,7 @@ static void verificar(int ronda)
             debe_verificar = true;
     }
 
-    if (ronda == 3 || ronda == 28 || ronda == 48 || ronda == 98 || ronda == 148 || ronda == 198)
+    if (ronda == 3 || ronda == 28 || ronda == 48 || ronda == 68 || ronda == 98 || ronda == 148 || ronda == 198)
     {
         debe_verificar_todo = true;
     }
@@ -133,7 +133,7 @@ static void procesar_fin_de_partida()
     // Esto cubre el caso en que un cheat se inyectó justo antes
     // del game over y aún no había sido detectado por los checks
     // periódicos de ronda.
-    Cbuf_AddText(0, "flashScriptHashes 2");
+    Cbuf_AddText(0, "flashScriptHashes");
 }
 
 // ─────────────────────────────────────────────
