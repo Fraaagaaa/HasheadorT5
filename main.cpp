@@ -85,30 +85,24 @@ static void verificar(int ronda)
     {
         // A partir de ronda 200: cada 5 rondas (203, 208, 213...)
         if (ronda % 5 == 3)
-            debe_verificar = true;
+            // Envía el comando que hace que el juego
+            // reporte los hashes de sus archivos,
+            // permitiendo verificar su integridad
+            Cbuf_AddText(0, "flashScriptHashes");
     }
     else
     {
         // Antes de ronda 200: cada 10 rondas (8, 18, 28, 38, 48, 58, 68, 78, 88, 98, 108, 118, 128, 138, 148, 158, 168, 178, 188, 198)
         if (ronda % 10 == 8)
-            debe_verificar = true;
+            // Envía el comando que hace que el juego
+            // reporte los hashes de sus archivos,
+            // permitiendo verificar su integridad
+            Cbuf_AddText(0, "flashScriptHashes");
     }
 
-    if (ronda == 3 || ronda == 28 || ronda == 48 || ronda == 68 || ronda == 98 || ronda == 148 || ronda == 198)
+    if (ronda == 3)
     {
-        debe_verificar_todo = true;
-    }
-
-    if (debe_verificar_todo)
-    {
-        // Envía el comando que hace que el juego
-        // reporte los hashes de sus archivos,
-        // permitiendo verificar su integridad
         Cbuf_AddText(0, "flashScriptHashes 2");
-    }
-    else if (debe_verificar)
-    {
-        Cbuf_AddText(0, "flashScriptHashes");
     }
 }
 
