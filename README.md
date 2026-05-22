@@ -1,4 +1,4 @@
-# [Descarga](https://github.com/Fraaagaaa/HasheadorT5/releases/download/v1.0.0/HasheadorT5.dll)
+# [Descarga](https://github.com/Fraaagaaa/HasheadorT5/releases/latest/download/HasheadorT5.dll)
 # HasheadorT5
 Herramienta para flashear los hashes de los archivos del Call Of Duty Black Ops automáticamente en el cliente de plutonium
 
