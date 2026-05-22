@@ -20,5 +20,5 @@ Este `.dll` lo puedes construir desde 0, las únicas dependencias son [minhook](
 La función de este mod es simple:
 1. Cada 10 rondas flashea los scripts
 2. A partir de la ronda 200 los flashea cada 5 rondas
-3. En las rondas 3, 28, 48, 68, 98, 148 y 198 flasheará el hash de todos los archivos del juego cargados en el mapa
+3. En la ronda 3, flasheará el hash de todos los archivos del juego cargados en el mapa
 4. Al terminal la partida (si es por muerte, por reset no lo hará)
