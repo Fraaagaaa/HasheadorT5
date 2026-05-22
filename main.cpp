@@ -83,14 +83,14 @@ static void verificar(int ronda)
     // Verificación periódica según tramo de ronda
     if (ronda >= 200)
     {
-        // A partir de ronda 200: cada 5 rondas (200, 205, 210...)
-        if (ronda % 5 == 0)
+        // A partir de ronda 200: cada 5 rondas (203, 208, 213...)
+        if (ronda % 5 == 3)
             debe_verificar = true;
     }
     else
     {
-        // Antes de ronda 200: cada 10 rondas (10, 20, 30...)
-        if (ronda % 10 == 0)
+        // Antes de ronda 200: cada 10 rondas (8, 18, 28, 38, 48, 58, 68, 78, 88, 98, 108, 118, 128, 138, 148, 158, 168, 178, 188, 198)
+        if (ronda % 10 == 8)
             debe_verificar = true;
     }
 
