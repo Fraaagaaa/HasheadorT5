@@ -3,7 +3,7 @@
 Herramienta para flashear los hashes de los archivos del Call Of Duty Black Ops automáticamente en el cliente de plutonium
 
 ## Como instalar
-1. Descarga el [`HasheadorT5.dll`](https://github.com/Fraaagaaa/HasheadorT5/releases/download/v1.0.0/HasheadorT5.dll).
+1. Descarga el [`HasheadorT5.dll`](https://github.com/Fraaagaaa/HasheadorT5/releases/latest/download/HasheadorT5.dll).
 2. Dirigete a la carpeta `%LocalAppData%/Plutonium`
 3. Crea una carpeta `plugins`
 4. Pon el `HasheadorT5.dll` dentro de la carpeta `plugins`
